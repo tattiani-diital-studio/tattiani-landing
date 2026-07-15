@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital-инструменты и сайты для малого бизнеса</title>
+<title>Digital tools and websites for small businesses</title>
 <style>
   :root {
     --accent: #1b4332;
@@ -42,7 +42,7 @@
 
   header.hero {
     background: var(--bg-soft);
-    padding: 80px 0 64px;
+    padding: 104px 0 88px;
     text-align: center;
     border-bottom: 1px solid var(--border);
   }
@@ -62,11 +62,15 @@
   }
 
   section {
-    padding: 64px 0;
+    padding: 96px 0;
   }
 
   section.alt {
     background: var(--bg-soft);
+  }
+
+  section#contact {
+    background: #f7f4ef;
   }
 
   section h2 {
@@ -86,6 +90,13 @@
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 32px;
+    box-shadow: 0 4px 12px rgba(27, 67, 50, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(27, 67, 50, 0.14);
   }
 
   .service-card h3 {
@@ -143,12 +154,13 @@
   input, textarea {
     width: 100%;
     padding: 12px 14px;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
     color: var(--text);
     background: var(--bg);
+    transition: border-color 0.2s ease;
   }
 
   input:focus, textarea:focus {
@@ -220,31 +232,31 @@
 
 <header class="hero">
   <div class="container">
-    <h1>Создаём digital-инструменты и сайты для малого бизнеса</h1>
-    <p>Помогаем небольшим компаниям выглядеть профессионально в интернете и упрощаем повседневные задачи с помощью удобных веб-решений.</p>
+    <h1>We build digital tools and websites for small businesses</h1>
+    <p>We help small companies look professional online and simplify everyday tasks with easy-to-use web solutions.</p>
   </div>
 </header>
 
 <section id="services">
   <div class="container">
-    <h2>Услуги</h2>
+    <h2>Services</h2>
     <div class="services-grid">
       <div class="service-card">
-        <h3>Готовые digital-продукты</h3>
-        <p>Простые и удобные инструменты, которые можно быстро подключить к вашему бизнесу.</p>
+        <h3>Ready-made digital products</h3>
+        <p>Simple, convenient tools you can quickly plug into your business.</p>
         <ul>
-          <li>Веб-калькуляторы для расчёта стоимости услуг</li>
-          <li>Готовые инструменты для учёта и планирования</li>
-          <li>Виджеты и мини-приложения для сайта</li>
+          <li>Web calculators for pricing your services</li>
+          <li>Ready-made tools for tracking and planning</li>
+          <li>Widgets and mini-apps for your website</li>
         </ul>
       </div>
       <div class="service-card">
-        <h3>Разработка на заказ</h3>
-        <p>Решения, созданные с нуля под задачи именно вашего бизнеса.</p>
+        <h3>Custom development</h3>
+        <p>Solutions built from scratch around your business's specific needs.</p>
         <ul>
-          <li>Сайты и лендинги</li>
-          <li>Системы для выставления счетов (инвойсов)</li>
-          <li>Индивидуальные веб-инструменты под запрос</li>
+          <li>Websites and landing pages</li>
+          <li>Invoicing systems</li>
+          <li>Custom web tools built on request</li>
         </ul>
       </div>
     </div>
@@ -253,38 +265,38 @@
 
 <section class="alt" id="about">
   <div class="container">
-    <h2>О подходе</h2>
+    <h2>Our approach</h2>
     <div class="about-content">
-      <p>Мы говорим простым языком, без сложных технических терминов. Разбираемся в том, что нужно именно вашему бизнесу, и предлагаем решение, которое легко использовать каждый день — без лишних сложностей и долгих объяснений.</p>
+      <p>We speak in plain language, without complicated technical jargon. We take the time to understand what your business actually needs, then offer a solution that's easy to use every day — no unnecessary complexity, no long explanations.</p>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="container contact-wrapper">
-    <h2>Контакты</h2>
-    <p class="contact-email">Напишите нам напрямую: <a href="mailto:tattiani.digital.studio@gmail.com">tattiani.digital.studio@gmail.com</a></p>
+    <h2>Contact</h2>
+    <p class="contact-email">Write to us directly: <a href="mailto:tattiani.digital.studio@gmail.com">tattiani.digital.studio@gmail.com</a></p>
     <form>
       <div>
-        <label for="name">Имя</label>
-        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
       </div>
       <div>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="you@example.com" required>
       </div>
       <div>
-        <label for="message">Сообщение</label>
-        <textarea id="message" name="message" placeholder="Расскажите немного о вашем проекте" required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us a bit about your project" required></textarea>
       </div>
-      <button type="submit">Отправить</button>
+      <button type="submit">Send</button>
     </form>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>&copy; 2026. Все права защищены.</p>
+    <p>&copy; 2026. All rights reserved.</p>
   </div>
 </footer>
 
